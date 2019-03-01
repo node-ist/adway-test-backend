@@ -1,0 +1,1 @@
+export { initMongoose } from './connect'
