@@ -1,4 +1,4 @@
-##Install project
+## Install project
 Copy configure env:
 
 `cp .env.example .env`
@@ -15,13 +15,13 @@ Run dev server:
 
 `npm run dev`
 
-##API
+## API
 
-###Validation
+### Validation
 
 If request body is incorrect, route return 422 Unprocessable Entity response.
 
-###Routes
+### Routes
 
 **`GET /jobs` Jobs list**
 
