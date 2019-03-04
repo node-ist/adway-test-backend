@@ -1,18 +1,6 @@
-import { Router } from 'express'
-import { JobManager } from './jon-manager'
+import { createRoutes } from '../../lib/routes'
+import { getAllJobs } from './actions'
 
-const jobManager = new JobManager()
-
-const getAll = async (req, res) => {
-  const data = await jobManager.getAll()
-  res.json({ data })
-}
-
-const router = Router()
-
-router.get('/', getAll)
-
-export const jobRoutes = {
-  path: '/jobs',
-  router,
-}
+export const jobRoutes = createRoutes('/jobs', router => (
+  router.get('/', getAllJobs)
+))

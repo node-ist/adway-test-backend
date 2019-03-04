@@ -1,8 +1,16 @@
 import mongoose, { Schema } from 'mongoose'
-import { schedule } from '../constants'
+
+const schedule = {
+  FULL_TIME: 'Full-time',
+  PART_TIME: 'Part-time',
+}
 
 const schema = new Schema({
   title: {
+    type: String,
+    required: true,
+  },
+  tel: {
     type: String,
     required: true,
   },

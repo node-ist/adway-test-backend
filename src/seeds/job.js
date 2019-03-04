@@ -5,6 +5,7 @@ const fixtures = [
     title: 'Front-End Developer - Comviq Join squad',
     description:
       'As a Front-End developer within the Comviq Join squad you will be responsive for building great customer experiences. The squad support new customers',
+    tel: 'Tele 2',
     address: 'Sweden',
     schedule: 'Full-time',
     benefits: [
